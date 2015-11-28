@@ -1,0 +1,34 @@
+# Site settings
+title: #title
+subtitle: #subtitle
+description: > # this means to ignore newlines until "baseurl:"
+  #description
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: # the base hostname & protocol for your site
+encoding: utf-8
+
+# Site owner
+owner:
+  name: #name
+  email: #email
+  bio: #bio
+  google:
+    ad-client:
+    ad-slot:
+    analytics: #analytics
+    plus: #username
+    verify:
+
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: youtube
+    url: #url
+  - title: lastfm
+    url: #url
+
+

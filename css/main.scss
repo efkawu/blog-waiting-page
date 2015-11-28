@@ -1,0 +1,65 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Our variables
+//$base-font-family: Helvetica, Arial, sans-serif;
+//$base-font-family: Helvetica Lato, Helvetica, Arial, sans-serif;
+$base-font-family: "Lato";
+$brand-font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+//$brand-font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+$header-font-family: "Lato", Helvetica, Arial, sans-serif;
+$header-font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$brand-font-size:  $base-font-size * 2;
+$large-font-size:  $base-font-size * 1.5;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #555555;
+$background-color: #fdfdfd;
+$brand-color:      #0F1418;
+$active-color:     #0F1418;
+$danger-color:     #e74c3c;
+$icon_color:       #ffbf00;
+$icon2_color:       #c0ed5d;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+$muted-color:      #777777;
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+$break-small:     768px;
+
+
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  "base",
+  "theme",
+  "syntax-highlighting"
+;
